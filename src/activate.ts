@@ -21,13 +21,6 @@ export const activate = createActivate(
       prefix: string,
       minDistance: number
     ) {
-      // const sourceFile = ts.createSourceFile(
-      //   "currentFile",
-      //   newText,
-      //   ts.ScriptTarget.Latest
-      // );
-      console.log("Language", activeEditor.document.languageId);
-
       const rawTextDocument = { ...activeEditor.document } as any;
       rawTextDocument.uri = rawTextDocument.uri.toString();
       const textDocument = rawTextDocument as cssCore.TextDocument;
@@ -36,7 +29,7 @@ export const activate = createActivate(
       if (activeEditor.document.languageId === "less") {
         css = cssCore.getLESSLanguageService();
       }
-      const stylesheet = css.parseStylesheet(textDocument);
+
       const ranges = css.getFoldingRanges(textDocument);
 
       const decorations: any[] = [];
@@ -50,7 +43,7 @@ export const activate = createActivate(
         if (contentText.charAt(0) === "{") {
           contentText = activeEditor.document.lineAt(startLine - 1).text.trim();
         }
-        console.log("last char", contentText.charAt(contentText.length - 1));
+
         if (contentText.charAt(contentText.length - 1) === "{") {
           contentText = contentText.slice(0, contentText.length - 2);
         }
