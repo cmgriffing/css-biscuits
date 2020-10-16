@@ -2,7 +2,11 @@
 
 Use css-biscuits to make css soup and spaghetti more digestible. Annotate ALL the end brackets!!!
 
+Watch the text end brackets to see Biscuits in action.
+
 ![](./example.gif)
+
+Note: The explosion you see is [Power Mode](https://marketplace.visualstudio.com/items?itemName=hoovercj.vscode-power-mode)
 
 ## Warning! Potential Plugin Conflict
 
@@ -29,6 +33,10 @@ The HTML extension getting fixed will be the blueprint for fixing other extensio
   - default: `80`,
 
 ## Release Notes
+
+### 0.0.2
+
+Update README
 
 ### 0.0.1
 

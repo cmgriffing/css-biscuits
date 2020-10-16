@@ -4,6 +4,10 @@ All notable changes to the "html-biscuits" extension will be documented in this 
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+### 0.0.2
+
+Update README
+
 ### 0.0.1
 
 First tested public launch
