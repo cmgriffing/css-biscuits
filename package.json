@@ -1,7 +1,7 @@
 {
   "name": "css-biscuits",
   "version": "0.0.1",
-  "description": "Add annotations, hereso unto for known as \"Biscuits\", to the end of the line of closing brackets. Such Biscuits would be prop names for objects and arrays. Make json soup digestible!",
+  "description": "Add annotations, hereso unto for known as \"Biscuits\", to the end of the line of closing brackets. Such Biscuits the start of selector blocks. Make css soup digestible!",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/code-biscuits/css-biscuits.git"
@@ -23,17 +23,16 @@
     "Other"
   ],
   "keywords": [
-    "JSON",
-    "hints",
-    "readability",
+    "CSS",
+    "LESS",
+    "SCSS",
     "annotation",
     "biscuits"
   ],
   "activationEvents": [
     "onLanguage:css",
     "onLanguage:less",
-    "onLanguage:scss",
-    "onLanguage:sass"
+    "onLanguage:scss"
   ],
   "main": "./bundled/extension.js",
   "contributes": {
